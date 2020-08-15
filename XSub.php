@@ -1,7 +1,7 @@
 <?php
 /*
-File By : @ieoooo .
-Ch : @phprim .
+File By : @AmineSoukara .
+Ch : @HelpBdarija .
 */
 ob_start();
 $API_KEY = "719654333:AAFQvXq2EQPvCLWjOnw3l7Jw07y20jS2UZY";
@@ -98,16 +98,16 @@ bot('sendMessage',[
         'chat_id'=>$chat_id,
       'text'=>"• اهلا بك ؛ [$name](tg://user?id=$chat_id) 
 
-~ في بوت زيادة اعضاء قناتك من خلال مجموعتك ، قم باضافة البوت الى المجموعه وقم برفعه مشرف ؛ وارسل /setch واتبع التعليمات التي يرسلها لك البوت ❗️
+~ في بوت زيادة اعضاء قناتك من خلال مجموعتك ، قم باضافة البوت الى المجموعه وقم برفعه مشرف ؛ وارسل /set واتبع التعليمات التي يرسلها لك البوت ❗️
 
-~ للاستفسار راسلني ؛ @S3D3D❗️
+~ للاستفسار راسلني ؛ @AmineSoukara ❗️
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-[• اضغط هنا وتابع جديدنا ، 📢](t.me/c3d3d)",
+[• اضغط هنا وتابع جديدنا ، 📢](t.me/HelpBdarija)",
       'parse_mode'=>"MarkDown",
 'disable_web_page_preview'=>true,
 'reply_markup'=>json_encode([
         'inline_keyboard'=>[
-[['text'=>" المحترف | هدهد ☬'",'url'=>"t.me/s3d3d"]]
+[['text'=>" Damien ☬'",'url'=>"t.me/AmineSoukara"]]
         ]
     ])
     ]);
@@ -171,7 +171,7 @@ if($data == "co" and $update->callback_query->message->chat->id == $admin ){
     bot('answercallbackquery',[
         'callback_query_id'=>$update->callback_query->id,
         'text'=>"
-        عدد مشتركين البوت📢 :- [ $c ] .
+        عدد مشتركين البوت 📢 :- [ $c ] .
         ",
         'show_alert'=>true,
 ]);
@@ -240,7 +240,7 @@ bot('deleteMessage',[
 }
 }
 
-if($text == "/setch"){
+if($text == "/set"){
 if($rank == "creator" or $rank== "administrator"){
  file_put_contents("data/$chat_id/ieoooo.txt","Setieoooo");
 $channelid = file_get_contents("data/$chat_id/channelid.txt");
@@ -251,7 +251,7 @@ $channelid = file_get_contents("data/$chat_id/channelid.txt");
 - الان قم بأرسال معرف قناة المجموعه ؛ التي لايمكن لاعضاء المجموعه التحدث الى بعد الاشتراك بها 
 
 ~ قم بأرسال معرف القناة دون ( @ ) 
-~ مثال ؛ phprim ",
+~ مثال ؛ HelpBdarija ",
  'parse_mode'=>"MarkDown",
 'disable_web_page_preview'=>true,
  ]);
@@ -263,7 +263,7 @@ if($ieoooo == "Setieoooo"){
  file_put_contents("data/$chat_id/channelid.txt",$text);
      bot('sendmessage', [
                 'chat_id'=>$chat_id,
-                'text' =>"~ تم ضبط قناة المجموعه تاكد من ان البوت مشرف في القناة ليعمل بالشكل الصحيح ، 🇮🇶 ؛",
+                'text' =>"~ تم ضبط قناة المجموعه تاكد من ان البوت مشرف في القناة ليعمل بالشكل الصحيح ، 🇲🇦 ؛",
  'parse_mode'=>"MarkDown",
 'disable_web_page_preview'=>true,
  ]);
