@@ -1,3 +1,4 @@
+<?php
 $SAIED0 = "Helpbdarija"; //معرف القناة الاولى او ايدي القناة للقنوات الخاص
 $SAIED1 = "MarsMusicTM"; //معرف القناة الثانية او ايدي القنا للقنوات الخاصة
 $Token = "123:AbC"; // توكن بوتك
@@ -14,3 +15,4 @@ bot('sendMessage', [
 '.$SAIED0.'
 '.$SAIED1,
 ]);return false;}
+?>
